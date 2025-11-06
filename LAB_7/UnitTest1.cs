@@ -21,8 +21,8 @@ namespace LAB_7
         public void googleRequest()
         {
             IWebDriver webDriver = new ChromeDriver();
-            webDriver.Url = "https://www.google.com/";
-            IWebElement search = webDriver.FindElement(By.XPath("/html/body/textarea"));
+            webDriver.Url = "https://www.dns-shop.ru/";
+            IWebElement search = webDriver.FindElement(By.XPath("//*[@id=\"header-mobile-inner\"]/div[2]/div[1]/div/div/div[1]/div/input"));
             search.SendKeys("автоматизированное тестирование");
             webDriver.Close();
             webDriver.Quit();
