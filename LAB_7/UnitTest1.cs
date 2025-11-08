@@ -31,24 +31,24 @@ namespace LAB_7
         //    //webDriver.Close();
         //    //webDriver.Quit();
         //}
-        [TestCase]
-        public void ramblerRequest()
-        {
-            ChromeOptions options = new ChromeOptions();
-            options.AddArguments("--disable-infobars");
-            IWebDriver webDriver = new ChromeDriver(options);
-            webDriver.Url = "https://www.rambler.ru/";
-            IWebElement search = webDriver.FindElement(By.XPath("/html/body/div[1]/header/div[3]/div/div[2]/form/input"));
-            search.SendKeys("автоматизированное тестирование");
-            IWebElement button = webDriver.FindElement(By.XPath("/html/body/div[1]/header/div[3]/div/div[2]/form/button"));
-            button.Click();
-            //webDriver.Close();
-            //webDriver.Quit();
-        }
-        [TearDown]
-        public void testEnd()
-        {
+        //[TestCase]
+        //public void ramblerRequest()
+        //{
+        //    ChromeOptions options = new ChromeOptions();
+        //    options.AddArguments("--disable-infobars");
+        //    IWebDriver webDriver = new ChromeDriver(options);
+        //    webDriver.Url = "https://www.rambler.ru/";
+        //    IWebElement search = webDriver.FindElement(By.XPath("/html/body/div[1]/header/div[3]/div/div[2]/form/input"));
+        //    search.SendKeys("автоматизированное тестирование");
+        //    IWebElement button = webDriver.FindElement(By.XPath("/html/body/div[1]/header/div[3]/div/div[2]/form/button"));
+        //    button.Click();
+        //    //webDriver.Close();
+        //    //webDriver.Quit();
+        //}
+        //[TearDown]
+        //public void testEnd()
+        //{
 
-        }
+        //}
     }
 }
